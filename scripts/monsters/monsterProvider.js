@@ -1,18 +1,18 @@
-import settings from "../.settings.js"
+// import settings from "../.settings.js"
 
-let monster = []
+let monsters = []
 
-export const useMonster = () => {
-  return monster
+export const useMonsters = () => {
+  return monsters
 }
 
-export const getMonster = (monsterSearch) => {
+export const getMonsters = (monsterSearch) => {
   return fetch(`https://api.open5e.com/monsters/?search=${monsterSearch}`)
     .then(response => response.json())
     .then(
-      parsedMonster => {
-        console.table(parsedMonster)
-        monster = parsedMonster.list.slice()
+      parsedMonsters => {
+        console.table(parsedMonsters.results)
+        monsters = parsedMonsters.results
       }
 
     )

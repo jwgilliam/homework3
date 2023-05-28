@@ -1,4 +1,4 @@
-import { getMonster } from "../monsters/monsterProvider.js"
+import { getMonsters } from "../monsters/monsterProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".searchFormContainer")
