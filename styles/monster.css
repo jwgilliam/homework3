@@ -1,0 +1,8 @@
+.monster_card {
+  display: flex;
+  flex-flow: row-wrap;
+  flex-basis: content;
+  padding: 10px;
+  border: 2px solid #DF0000;
+  margin-bottom: 10px;
+}

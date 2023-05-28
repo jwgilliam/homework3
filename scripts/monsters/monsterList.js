@@ -24,7 +24,7 @@ const monsterListComponent = () => {
   const render = (element) => {
     contentTarget.innerHTML = `
     <section class="monster_box">
-    <p class="monster_title">zzzz</p>
+    <p class="monster_title">Here are the monsters</p>
     <div class="monster_cards">
      ${element.map(currentElement => {
       return monsterComponent(currentElement)
